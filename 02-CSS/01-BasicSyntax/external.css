@@ -1,0 +1,11 @@
+/*
+h2          - Selector
+{}          - Expression
+font-size   - Property
+30px        - value
+*/
+
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+}
