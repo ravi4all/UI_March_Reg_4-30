@@ -1,0 +1,35 @@
+/* Parallax Effect */
+body {
+    background-image: url("https://www.cricket.com.au/-/media/News/2017/11/28Kohli.ashx");
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 600px;
+    background-size: 100% 100%;
+    margin-bottom: 300px;
+    background-attachment: fixed;
+}
+#div_1 {
+    background-image: url("https://blogs.timesofindia.indiatimes.com/wp-content/uploads/2016/03/Virat-Kohli.jpg");
+}
+#div_2 {
+    background-image: url("https://blogs.timesofindia.indiatimes.com/wp-content/uploads/2016/11/Virat-Kohli.jpg");
+}
+#div_3 {
+    background-image: url("https://www.outlookindia.com/public/uploads/articles/2017/10/30/VIRAT_KOHLI_630_630.jpg");
+}
+#div_4 {
+    background-image: url("http://a.espncdn.com/combiner/i?img=/media/motion/2016/0323/dm_160323_wt20_Mar23_India_v_Bangladesh_Dhoni_PC_NRH/dm_160323_wt20_Mar23_India_v_Bangladesh_Dhoni_PC_NRH.jpg?w=926&h=540");
+}
+#div_5 {
+    background-image: url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201701/647_010517091159.jpg");
+}
+#div_6 {
+    background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/10/23/12/Dhoni_0.jpg");
+}
