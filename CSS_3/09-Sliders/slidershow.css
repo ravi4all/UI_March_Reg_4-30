@@ -1,0 +1,27 @@
+#slider {
+    height: 600px;
+    background-image: url("../../images/WebImages/the-joker-black-white.jpeg");
+    background-size: 100% 100%;
+    animation: slider 10s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url("../../images/WebImages/the-joker-black-white.jpeg");
+    }
+    20% {
+        background-image: url("../../images/WebImages/Terminator002.jpg");
+    }
+    40% {
+        background-image: url("../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+    }
+    60% {
+        background-image: url("../../images/NewImages/ageofultron-promo-art-hulk-in-action.png");
+    }
+    80% {
+        background-image: url("../../images/NewImages/NiiP10g.png");
+    }
+    100% {
+        background-image: url("../../images/WebImages/the-joker-black-white.jpeg");
+    }
+}

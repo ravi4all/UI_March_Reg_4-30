@@ -1,0 +1,49 @@
+#cube {
+    width: 300px;
+    margin: 0 auto;
+    transition: 6s;
+    transform-style: preserve-3d;
+    animation: cube 10s infinite linear alternate;
+}
+@keyframes cube {
+    0% {
+        transform: rotate3d(0,0,0,0deg);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: rotate3d(1,1,0,360deg);
+        transform-origin: bottom;
+    }
+}
+/* #cube:hover {
+    transform: rotateY(360deg);
+} */
+#cube div {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid red;
+    color: #fff;
+    font-size: 60px;
+    transition: 2s;
+}
+#left {
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+#right {
+    transform: rotateY(-90deg);
+    transform-origin: right;
+}
+#top {
+    transform: rotateX(-90deg);
+    transform-origin: top;
+}
+#bottom {
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+#back {
+    transform: translateZ(-300px);
+}
