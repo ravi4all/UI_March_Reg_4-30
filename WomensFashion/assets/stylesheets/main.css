@@ -1,0 +1,241 @@
+body {
+    margin: 0px;
+    font-family: 'Glegoo',Arial, Helvetica, serif;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+figure {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+}
+.text-right {
+    text-align: right;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 40px 0px 0px;
+}
+#header .row {
+    justify-content: space-between;
+}
+#header .login {
+    width: 20%;
+}
+#header .login a {
+    font-size: 14px;
+    color: #BEBEBE;
+    border: 1px solid #BEBEBE;
+    display: block;
+    width: 50px;
+    padding: 15px 17px;
+}
+
+#header .logo {
+    width: 50%;
+    text-align: center;
+    margin-top: -11px;
+}
+#header .logo h1 {
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+#header .logo a {
+    font-size: 40px;
+    line-height: 5px;
+    color: #212121;
+}
+#header .logo a span{
+    display: block;
+    font-size: 12px;
+    letter-spacing: 13px;
+    text-transform: capitalize;
+}
+
+#header .search a {
+    color: #BEBEBE;
+}
+
+#header .cart a {
+    color: #ff9b05;
+}
+#header .cart .empty_cart {
+    display: block;
+    text-align: right;
+    color: #212121;
+}
+
+
+#main-nav {
+    margin-top: 35px;
+}
+#main-nav ul {
+    display: flex;
+    justify-content: center;
+}
+#main-nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    padding: 18px 35px;
+    color: #212121;
+    letter-spacing: 3px;
+}
+#main-nav ul li.active a {
+    color: #ff9b05;
+}
+#main-nav ul li.dropdown {
+    position: relative;
+}
+#main-nav ul li.dropdown:after {
+    content: "";
+    border: 5px solid #212121;
+    border-color: #212121 transparent transparent;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+
+#banner {
+    position: relative;
+}
+#banner img {
+    width: 100%;
+}
+#banner h2 {
+    color: #fff;
+}
+#banner .heading_1 {
+    color: #ff9b05;
+    margin-left: 40px;
+    position: relative;
+}
+#banner .heading_1:after {
+    content: "";
+    border: 1px solid #fff;
+    position: absolute;
+    width: 30%;
+    height: 0px;
+    top: 20px;
+    right: 50px;
+}
+#banner .description {
+    position: absolute;
+    width: 500px;
+    left: 5%;
+    top: 40%;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.5);
+    transform: rotate(-90deg);
+}
+
+
+#section_1 {
+    padding: 70px 0px 100px;
+}
+#section_1 .row {
+    /* justify-content: space-around; */
+}
+#section_1 .col-1 {
+    width: 40%;
+}
+#section_1 .col-2 {
+    width: 58%;
+    margin-left: 20px;
+}
+#section_1 figure img {
+    width: 100%;
+}
+#section_1 .tabs {
+    margin-bottom: 50px;
+}
+#section_1 .tabs ul {
+    display: flex;
+    border-bottom: 2px solid #ff9b05;
+}
+#section_1 .tabs ul li.active a{
+    background-color: #ff9b05;
+    color: #fff;
+}
+#section_1 .tabs ul li a{
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #212121;
+    letter-spacing: 2px;
+}
+#section_1 .tab-content .row {
+    justify-content: space-between;
+}
+#section_1 .tab-content .col {
+    text-align: center;
+    width: 35%;
+}
+#section_1 .tab-content figure {
+    position: relative;
+    min-height: 300px;
+}
+#section_1 .tab-content .images img {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+}
+#section_1 .tab-content .img_1, #section_1 .tab-content .img_2,
+#section_1 .tab-content .img_3, #section_1 .tab-content .img_4 {
+    animation: show_1 1s infinite linear;
+}
+#section_1 .tab-content .img_2 {
+    animation-delay: 1s;
+}
+#section_1 .tab-content .img_3 {
+    animation-delay: 2s;
+}
+#section_1 .tab-content .img_4 {
+    animation-delay: 3s;
+}
+
+@keyframes show_1 {
+    0% {
+        z-index: -1;
+    }
+    100% {
+        z-index: 2;
+    }
+}
