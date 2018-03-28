@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+}
+
+@media(max-width:992px){
+    body {
+        background-color: lightyellow;
+    }
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+.row {
+    display: flex;
+}
+
+#header {
+    background-color: lightblue;
+    padding: 10px 20px 20px;
+}
+#header .row {
+    justify-content: space-between;
+}
+
+@media(max-width:992px){
+    .logo h1 {
+        font-size: 25px;
+    }
+}
+
+#main-nav ul {
+    display: flex;
+}
+#main-nav ul li {
+    margin: 0px 12px;
+    padding-top: 10px;
+}
+#main-nav ul li a {
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+
+.menu-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 20px;
+    top: 20px;
+    pointer-events: none;
+    display: none;
+}
+.menu-btn .line {
+    display: block;
+    width: 30px;
+    border: 2px solid red;
+    margin-bottom: 4px;
+}
+
+input[value="show-menu"] {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 36px;
+    height: 20px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .menu-btn {
+        display: block;
+    }
+    #main-nav ul {
+        display: block;
+        /* display: none; */
+        position: absolute;
+        background-color: rgba(255,255,255,0.9);
+        width: 100%;
+        left: 0px;
+        text-align: center;
+        top: 55px;
+        padding-bottom: 20px;
+        /* transform: translateX(-100%); */
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: 1s;
+    }
+    #main-nav input[value="show-menu"]:checked ~ ul {
+        /* display: block; */
+        /* transform: translateX(0%); */
+        transform: scale(1,1);
+    }
+}
+
+#content {
+    padding: 50px 20px;
+}
+.col-1 {
+    width: 70%;
+}
+.col-2 {
+    width: 25%;
+}
+
+#main {
+    background-color: lightskyblue;
+}
+@media(max-width:992px){
+    #main img {
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .row {
+        display: block;
+    }
+    .col-1 {
+        width: 100%;
+    }
+    .col-2 {
+        width: 50%;
+    }
+}
+#sidebar ul li{
+    background-color: lightgray;
+    padding: 15px;
+}
+
+@media(max-width:768px){
+    #sidebar {
+        position: fixed;
+        right: -100%;
+        top: 20%;
+    }
+}
