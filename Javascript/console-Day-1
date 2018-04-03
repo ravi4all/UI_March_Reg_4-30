@@ -1,0 +1,131 @@
+a = 10
+10
+typeof(a)
+"number"
+a = 10.5
+10.5
+typeof(a)
+"number"
+a = "Hello"
+"Hello"
+typeof(a)
+"string"
+a = "10"
+"10"
+b = 12
+12
+a + b
+"1012"
+c = 15
+15
+a + b + c
+"101215"
+b + c + a
+"2710"
+a - b + c
+13
+a - b
+-2
+a
+"10"
+a * b
+120
+a / b
+0.8333333333333334
+b = "10"
+"10"
+a * b
+100
+parseInt(a) + parseInt(b)
+20
+d = 10
+10
+a
+"10"
+d
+10
+a == b
+true
+a === b
+true
+a == d
+true
+a === d
+false
+function add(){
+	x1 = 10;
+	y1 = 12;
+	console.log(x1 + y1);
+}
+undefined
+add()
+VM345:4 22
+undefined
+x1 - y1
+-2
+function add(){
+	var x2 = 10;
+	var y2 = 12;
+	console.log(x2 + y2);
+}
+undefined
+add()
+VM361:4 22
+undefined
+x2
+VM369:1 Uncaught ReferenceError: x2 is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM369:1
+x = "Hello"
+"Hello"
+var x = "Hello"
+undefined
+console.log(x)
+VM383:1 Hello
+undefined
+function add(){
+	var x2 = 10;
+	var y2 = 12;
+	return x2 + y2;
+}
+undefined
+add()
+22
+typeof(undefined)
+"undefined"
+arr = [12,34,56,67,11,13,23]
+(7) [12, 34, 56, 67, 11, 13, 23]0: 121: 342: 563: 674: 115: 136: 23length: 7__proto__: Array(0)concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toString: ƒ toString()unshift: ƒ unshift()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {copyWithin: true, entries: true, fill: true, find: true, findIndex: true, …}__proto__: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()get __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+typeof(arr)
+"object"
+arr instanceof Array
+true
+a
+"10"
+typeof(a)
+"string"
+a instanceof String
+false
+b = true
+true
+typeof(b)
+"boolean"
+b instanceof Boolean
+false
+c = new String("hello")
+String {"hello"}0: "h"1: "e"2: "l"3: "l"4: "o"length: 5__proto__: Stringanchor: ƒ anchor()big: ƒ big()blink: ƒ blink()bold: ƒ bold()charAt: ƒ charAt()charCodeAt: ƒ charCodeAt()codePointAt: ƒ codePointAt()concat: ƒ concat()constructor: ƒ String()endsWith: ƒ endsWith()fixed: ƒ fixed()fontcolor: ƒ fontcolor()fontsize: ƒ fontsize()includes: ƒ includes()indexOf: ƒ indexOf()italics: ƒ italics()lastIndexOf: ƒ lastIndexOf()length: 0link: ƒ link()localeCompare: ƒ localeCompare()match: ƒ match()normalize: ƒ normalize()padEnd: ƒ padEnd()padStart: ƒ padStart()repeat: ƒ repeat()replace: ƒ replace()search: ƒ search()slice: ƒ slice()small: ƒ small()split: ƒ split()startsWith: ƒ startsWith()strike: ƒ strike()sub: ƒ sub()substr: ƒ substr()substring: ƒ substring()sup: ƒ sup()toLocaleLowerCase: ƒ toLocaleLowerCase()toLocaleUpperCase: ƒ toLocaleUpperCase()toLowerCase: ƒ toLowerCase()toString: ƒ toString()toUpperCase: ƒ toUpperCase()trim: ƒ trim()trimLeft: ƒ trimLeft()trimRight: ƒ trimRight()valueOf: ƒ valueOf()Symbol(Symbol.iterator): ƒ [Symbol.iterator]()__proto__: Object[[PrimitiveValue]]: ""[[PrimitiveValue]]: "hello"
+typeof(Array)
+"function"
+typeof(Object)
+"function"
+Object
+ƒ Object() { [native code] }
+arr instanceof Array
+true
+arr instanceof Object
+true
+typeof("number")
+"string"
+typeof(number)
+"undefined"
+typeof(function)
+VM465:1 Uncaught SyntaxError: Unexpected token )
