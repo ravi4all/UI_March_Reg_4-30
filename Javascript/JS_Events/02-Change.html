@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>OnBlur</h1>
+
+    <input type="text" placeholder="Enter Name" onchange="validate(this)" id="box_1">
+    <span id="result"></span>
+    
+    <script>
+        function validate(obj){
+            // alert("Blur Called");
+            document.getElementById("box_1").value;
+            var span = document.getElementById("result");
+            var val = obj.value;
+            if(val == ""){
+                span.innerHTML = "Please Enter Something";
+            }
+            else{ 
+                span.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>

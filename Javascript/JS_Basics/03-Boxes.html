@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Alert + Prompt + Confirm Box</h1>
+    <button onclick="box()">Click Here</button>
+    
+    <script>
+        function box(){
+            // alert("Alert Box Example");
+            // var firstname = prompt("Enter your first name : ","firstname");
+            // var lastname = prompt("Enter your last name : ","lastname");
+            // alert("Hello "+firstname + " " + lastname);
+            var firstnum = parseInt(prompt("Enter first number :",0));
+            var secondnum = parseInt(prompt("Enter second num",0));
+            result = firstnum + secondnum;
+            // alert("Sum is "+result);
+            // Truthy and Falsy
+            // Falsy - Undefined,NaN,null,0
+            if(result) {
+                alert("Sum is "+result);
+            }
+            else {
+                alert("Please enter a number");
+            }
+        }
+    </script>
+</body>
+</html>
